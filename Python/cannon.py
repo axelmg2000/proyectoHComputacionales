@@ -34,10 +34,12 @@ def draw():
     clear()
 
     for target in targets:
+        hideturtle()
         goto(target.x, target.y)
         dot(20, 'blue')
 
     if inside(ball):
+        showturtle()
         goto(ball.x, ball.y)
         dot(6, 'red')
 
@@ -79,8 +81,9 @@ def move():
 
     ontimer(move, 50)
 
+shape("turtle")
 setup(420, 420, 370, 0)
-hideturtle()
+showturtle()
 up()
 tracer(False)
 onscreenclick(tap)
