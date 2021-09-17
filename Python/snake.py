@@ -60,9 +60,12 @@ setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
-onkey(lambda: change(10, 0), 'Right')
-onkey(lambda: change(-10, 0), 'Left')
-onkey(lambda: change(0, 10), 'Up')
-onkey(lambda: change(0, -10), 'Down')
+
+# Change the snakes arrow keys
+onkey(lambda: change(10, 0), 's')
+onkey(lambda: change(-10, 0), 'a')
+onkey(lambda: change(0, 10), 'w')
+onkey(lambda: change(0, -10), 'z')
+
 move()
 done()
