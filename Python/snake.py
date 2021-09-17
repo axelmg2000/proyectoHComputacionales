@@ -12,6 +12,7 @@ Exercises
 from turtle import *
 from random import randrange
 from freegames import square, vector
+import random
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
@@ -37,6 +38,15 @@ def move():
         return
 
     snake.append(head)
+
+    randNum = random.randint(0,6)
+    if(randNum == 1):
+    #El 25% de las veces aproximadamente se cambiará la posición de la comida cuando la serpiente de acerque
+        x = head.x
+        y = head.y
+        if ((x == food.x - 10 or x == food.x + 10) and y == head.y) or ((y == food.y - 10 or y == food.y + 10) and x == head.x):
+                food.x = randrange(-15, 15) * 10
+                food.y = randrange(-15, 15) * 10
 
     if head == food:
         print('Snake:', len(snake))
