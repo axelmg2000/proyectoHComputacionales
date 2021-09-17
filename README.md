@@ -3,6 +3,7 @@ Proyecto en equipo para explorar el funcionamiento de github, git y otras herram
 
 ## Authors 
 - Andreina Cardenas 
+- Ximena Sánchez Padilla
 
 ### Website
 #### This is the website
