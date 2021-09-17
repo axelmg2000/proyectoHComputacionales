@@ -16,6 +16,7 @@ from freegames import square, vector
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
+vel = 1000 #controls speed (ms)
 
 def change(x, y):
     "Change snake direction."
@@ -27,6 +28,7 @@ def inside(head):
     return -200 < head.x < 190 and -200 < head.y < 190
 
 def move():
+    global vel
     "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
@@ -52,15 +54,15 @@ def move():
 
     square(food.x, food.y, 9, 'green')
     update()
-    ontimer(move, 100)
+    ontimer(move, vel)
 
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
-onkey(lambda: change(10, 0), 's')
-onkey(lambda: change(-10, 0), 'a')
-onkey(lambda: change(0, 10), 'w')
-onkey(lambda: change(0, -10), 'z')
+onkey(lambda: change(10, 0), 'Right')
+onkey(lambda: change(-10, 0), 'Left')
+onkey(lambda: change(0, 10), 'Up')
+onkey(lambda: change(0, -10), 'Down')
 move()
 done()
