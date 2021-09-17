@@ -8,9 +8,9 @@ Proyecto en equipo para explorar el funcionamiento de github, git y otras herram
 ### Python Programs Modifications 
 ### The modifications of each author where: 
 -Andreina:
---cannon:Gravity change in the program 
---pacman:Changed the 
---snake:Controls change 
+  -cannon:Gravity change in the program 
+  -pacman:Changed the 
+  -snake:Controls change 
 =======
 
 
