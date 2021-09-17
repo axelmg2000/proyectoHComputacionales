@@ -11,6 +11,10 @@ The modifications of each author where:
   - cannon:Gravity change in the program 
   - pacman:Changed the board
   - snake:Controls key change 
+ - Ximena Sánchez
+  - cannon: Change cannon´s ball shape 
+  - pacman: Change number of ghosts
+  - snake: Make the snake faster  
  
 
 =======
