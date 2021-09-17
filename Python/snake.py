@@ -68,6 +68,7 @@ setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
+# Change the snakes arrow keys
 onkey(lambda: change(10, 0), 's')
 onkey(lambda: change(-10, 0), 'a')
 onkey(lambda: change(0, 10), 'w')
