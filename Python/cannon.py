@@ -34,10 +34,12 @@ def draw():
     clear()
 
     for target in targets:
+        hideturtle() #hides turtle 
         goto(target.x, target.y)
         dot(20, 'blue')
 
     if inside(ball):
+        showturtle() #shows turtle
         goto(ball.x, ball.y)
         dot(6, 'red')
 
@@ -54,6 +56,8 @@ def move():
     # Move the existing targets
     for target in targets:
         target.x -= 0.8
+	    target.y -= 0.2  # Apply gravity to the game in order to change 
+
 
     # Move the cannon shot
     if inside(ball):
@@ -79,8 +83,9 @@ def move():
 
     ontimer(move, 50)
 
+shape("turtle") #Changed the shape of the cannon ball for a turtle 
 setup(420, 420, 370, 0)
-hideturtle()
+showturtle() #shows the figure 
 up()
 tracer(False)
 onscreenclick(tap)
