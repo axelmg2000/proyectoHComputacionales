@@ -4,6 +4,7 @@ Proyecto en equipo para explorar el funcionamiento de github, git y otras herram
 ## Authors 
 - Andreina Cardenas 
 - Ximena Sánchez Padilla
+- Axel Mercdo Gasque
 
 ## Python Programs Modifications 
 The modifications of each author where: 
@@ -15,6 +16,10 @@ The modifications of each author where:
   - cannon: Change cannon´s ball shape 
   - pacman: Change number of ghosts
   - snake: Make the snake faster  
+- Axel Mercado
+  - cannon: change speed of targets
+  - snake: move the food
+  - pacman: change where pacman starts
  
 
 =======
