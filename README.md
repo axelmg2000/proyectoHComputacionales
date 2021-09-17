@@ -5,7 +5,7 @@ Proyecto en equipo para explorar el funcionamiento de github, git y otras herram
 - Andreina Cardenas 
 - Ximena Sánchez Padilla
 
-### Python Programs Modifications 
+## Python Programs Modifications 
 The modifications of each author where: 
 - Andreina Cardenas 
   - cannon:Gravity change in the program 
